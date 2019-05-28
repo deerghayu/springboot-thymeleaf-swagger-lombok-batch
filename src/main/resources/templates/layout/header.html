@@ -4,8 +4,8 @@
         <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
         <link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}"
               href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css"
-              rel="stylesheet" media="screen" />
-        <link rel="stylesheet" th:href="@{/css/style.css}" href="../../static/css/style.css" />
+              rel="stylesheet" media="screen"/>
+        <link rel="stylesheet" th:href="@{/css/style.css}" href="../../static/css/style.css"/>
     </head>
     <body>
 
@@ -16,8 +16,12 @@
                         <div class="navbar-header">
                             <a class="navbar-brand" href="#" th:href="@{/}">Home</a>
                             <ul class="nav navbar-nav">
-                                <li><a th:href="@{/products}">Products</a></li>
-                                <li><a th:href="@{/products/add}">Create Product</a></li>
+                                <li>
+                                    <a th:href="@{/products}">Products</a>
+                                </li>
+                                <li>
+                                    <a th:href="@{/products/add}">Create Product</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -31,12 +35,10 @@
                     </div>
                     <div class="row text-center">
                         <img src="../../static/images/logo.png" width="20%"
-                             th:src="@{/images/logo.png}" />
+                             th:src="@{/images/logo.png}"/>
                     </div>
                 </div>
-
             </div>
         </div>
-
     </body>
 </html>
